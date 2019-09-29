@@ -1,0 +1,35 @@
+{
+  "name": "cmd-ctrl-shift-alt-vue",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel serve index.html",
+    "build": "parcel build index.html",
+    "lint": "xo .",
+    "format": "xo . --fix"
+  },
+  "author": "Hugo Di Francesco",
+  "dependencies": {
+    "parcel-bundler": "^1.12.3",
+    "vue": "^2.6.10",
+    "vue-hot-reload-api": "^2.3.4"
+  },
+  "main": "main.js",
+  "keywords": [
+    "parcel-bundler"
+  ],
+  "license": "MIT",
+  "description": "Simple Vue command, control, shift, alt + click detection",
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.0.0",
+    "vue-template-compiler": "^2.6.10",
+    "xo": "^0.25.3"
+  },
+  "xo": {
+    "prettier": true,
+    "space": true,
+    "globals": [
+      "document"
+    ]
+  }
+}
